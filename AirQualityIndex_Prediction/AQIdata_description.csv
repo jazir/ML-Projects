@@ -1,0 +1,18 @@
+Fields	Description
+Date	Date
+T	Average Temperature (°C)
+TM	Maximum temperature (°C)
+Tm	Minimum temperature (°C)
+SLP	Atmospheric pressure at sea level (hPa)
+H	Average relative humidity (%)
+PP	Total rainfall and / or snowmelt (mm)
+VV	Average visibility (Km)
+V	Average wind speed (Km/h)
+VM	Maximum sustained wind speed (Km/h)
+Ozone conc	Ozone concentration in ppm
+PM-2.5 conc	PM-2.5 concentration in microgram/m3
+NO2 conc	NO2 concentration in ppm
+SO2 conc	SO2 concentration in ppm
+CO conc	CO concentration in ppm
+PM-10 conc	PM-10 concentration in microgram/m3
+AQI	Net Air Quality Index

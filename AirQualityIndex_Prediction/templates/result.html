@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h2>Air Quality Index Prediction</h2>
+    </div>
+</header>
+<div class="top-container">
+    <h2 style="...">AQI: {{prediction}}</h2>
+</div>
+<div class="meter-container">
+    <label> AQI-Meter
+        <meter high="500" low="0" max="500" min="0" optimum="50"
+           value="{{prediction}}">Center-seeking meter
+        </meter>
+    </label>
+</div>
+<div class="fig-div">
+    <img class="aqi-fig" src="http://airquality.deq.idaho.gov/Information_AQI_files/image002.jpg" alt="aqi-img">
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <!link rel="stylesheet" type="text/css" href="static/styles.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h2>Air Quality Index Prediction</h2>
+    </div>
+</header>
+
+<div class="form-container">
+    <h3>Input the following concentration values</h3>
+    <p>All fields are required</p>
+
+    <form action="/predict" method="POST">
+
+
+        <label for="Ozone">Ozone</label>
+        <input type="text" name="Ozone conc" id="Ozone" placeholder="(in ppm)" value="" required/>
+
+
+        <label for="PM-2.5">PM-2.5</label>
+        <input type="text" name="PM-2.5 conc" id="PM-2.5" placeholder="(in Conc μg/m3)" value="" required/>
+
+
+        <label for="NO2">NO2</label>
+        <input type="text" name="NO2 conc" id="NO2" placeholder="(in ppm)" value="" required/>
+
+
+        <label for="CO">CO</label>
+        <input type="text" name="CO conc" id="CO" placeholder="(in ppm)" value="" required/>
+
+
+        <label for="PM-10">PM-10</label>
+        <input type="text" name="PM-10 conc" id="PM-10" placeholder="(in Conc μg/m3)" value="" required/>
+
+
+        <div>
+            <!-- <input type="text" name="comment"/> -->
+
+            <input class="btn-info" type="submit" value="Predict">
+            <input class="btn-info" type="reset" value="Reset">
+        </div>
+    </form>
+
+</div>
+
+
+</body>
+</html>
